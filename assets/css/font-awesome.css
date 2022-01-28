@@ -37,6 +37,12 @@
 .fa-5x {
   font-size: 5em;
 }
+
+.fas .fa-dumbbell {
+  color:white;
+  background-color:black;
+}
+
 .fa-fw {
   width: 1.28571429em;
   text-align: center;

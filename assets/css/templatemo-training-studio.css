@@ -606,15 +606,17 @@ banner
 
 .main-banner {
   position: relative;
+  
 }
 
-#bg-video {
+#bg-image {
     min-width: 100%;
     min-height: 100vh;
     max-width: 100%;
     max-height: 100vh;
     object-fit: cover;
     z-index: -1;
+    background-color:black;
 }
 
 #bg-video::-webkit-media-controls {
@@ -639,6 +641,7 @@ banner
   font-weight: 800;
   color: #fff;
   letter-spacing: 0.5px;
+ 
 }
 
 .main-banner .caption h2 {
@@ -664,6 +667,12 @@ features
 ---------------------------------------------
 */
 
+div i.fa { display: none; }
+div img { display: block; }
+
+div.show-icon i.fa { display: inline-block; }
+div.show-icon img { display: none; }
+
 #features {
   margin-bottom: 80px;
 }
@@ -676,6 +685,10 @@ features
 .feature-item .left-icon img {
   float: left;
   margin-right: 30px;
+  height:90px;
+  width: 90px;
+  background-color:black;
+  color: black;
 }
 
 .feature-item .right-content {
@@ -864,132 +877,8 @@ schedule
   height: 100px;
 }
 
-#schedule table tr td {
-  color: #fff;
-  font-size: 13px;
-  text-transform: capitalize;
-  font-weight: 500;
-  letter-spacing: 0.25px;
-}
-
-.schedule-table.filtering .ts-item {
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.schedule-table.filtering .ts-item.show {
-    opacity: 1;
-    transition: all 0.5s;
-}
-
-#schedule .filters {
-  margin-bottom: 40px;
-}
-#schedule .filters ul {
-  padding: 0;
-  text-align: center;
-}
-#schedule .filters ul li {
-  list-style: none;
-  display: inline;
-  cursor: pointer;
-  position: relative;
-  margin-right: 10px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #fff;
-  text-transform: capitalize;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-#schedule .filters ul li:after {
-  content: "/";
-  margin-left: 10px;
-  color: #fff;
-}
-#schedule .filters ul li:last-child {
-  margin-right: 0px;
-}
-#schedule .filters ul li:last-child::after {
-  display: none;
-}
-#schedule .filters ul li.active,
-#schedule .filters ul li:hover {
-  color: #4AE290;
-}
-#schedule .filters-content {
-  margin-top: 50px;
-}
-#schedule .filters-content .show {
-  opacity: 1;
-  visibility: visible;
-  transition: all 350ms;
-}
-#schedule .filters-content .hide {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 350ms;
-}
-
-
-/* 
----------------------------------------------
-trainers
---------------------------------------------- 
-*/
-
-#trainers .trainer-item {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  padding: 40px;
-}
-
-#trainers .trainer-item img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-#trainers .trainer-item span {
-  font-size: 13px;
-  font-weight: 500;
-  color: #4AE290;
-  display: inline-block;
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
-#trainers .trainer-item h4 {
-  font-size: 19px;
-  font-weight: 600;
-  color: #232d39;
-  letter-spacing: 0.5px;
-  margin-bottom: 18px;
-}
-
-#trainers .trainer-item p {
-  margin-bottom: 20px;
-}
-
-#trainers .trainer-item ul.social-icons li {
-  display: inline-block;
-  margin-right: 12px;
-}
-
-#trainers .trainer-item ul.social-icons li:last-child {
-  margin-right: 0px;
-}
-
-#trainers .trainer-item ul.social-icons li a {
-  color: #232d39;
-  transition: all .3s;
-}
-
-#trainers .trainer-item ul.social-icons li a:hover {
-  color: #4AE290;
+.form {
+  max-width: 50%;
 }
 
 
